@@ -43,14 +43,16 @@ trainBits = 00000101001110010111011110100111001011010011100101110111 testBits = 
 # Tasks
 
 1. Construct a markov chain model for which the following is required:
-•	Define all possible states based on value of n.
 
-•	Calculate prior probabilities of all states from trainBits. Note that each consecutive n bits in trainBits refer to a state.             [ Hint : Prior probability of a state is related to the number of appearances of the state in trainBits]
+        •	Define all possible states based on value of n.
 
-•	Calcuate transition probabilities from trainBits. 
-        [Hint: Transistion probability from state A to state B is related to the count of state transition from A to B in trainBits.]
+        •	Calculate prior probabilities of all states from trainBits. Note that each consecutive n bits in trainBits refer to a                   state.                  
+                [ Hint : Prior probability of a state is related to the number of appearances of the state in trainBits]
+
+        •	Calcuate transition probabilities from trainBits. 
+                [Hint: Transistion probability from state A to state B is related to the count of state transition from A to B in                       trainBits.]
         
-•	Assume observation probability follows normal distribution & calculate the means of observations.
+        •	Assume observation probability follows normal distribution & calculate the means of observations.
 
 
 2.	Transmit testBits, calculate xk’s and use Viterbi algorithm on your markov model to reconstruct originally transmitted bits.
